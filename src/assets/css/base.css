@@ -1,0 +1,58 @@
+/* select input */
+
+
+/* .select-input {
+    position: relative;
+    min-width: 160px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--text-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: #4A4A4A;
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--text-white);
+    padding-left: 0;
+    list-style: none;
+    padding: 8px 16px;
+    display: none;
+    z-index: 1;
+}
+
+.select-input__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color)
+} */
+
+
+/* pagination */
