@@ -1,26 +1,14 @@
 <template>
     <div class="grid__row app__content">
         <div class="grid__column-2">
-            <nav class="category">
-                <h3 class="category__heading">
-                    <i class="category__heading-icon fas fa-list"></i> Danh mục
-                </h3>
-                <ul class="category-list">
-                    <ListCat :activeCat="true"></ListCat>
-                    <ListCat></ListCat>
-                    <ListCat ></ListCat>
-                    <ListCat ></ListCat>
-                </ul>
-            </nav>
+            <Category></Category>
         </div>
         <div class="grid__column-10 margin-select-bottom">
             <FilterNav></FilterNav>
             <div class="home-product">
-                <div class="grid__row">
-                    <transition name="fadeProduct">
+                    <transition name="leave">
                         <router-view></router-view>
                     </transition>
-                </div>
             </div>
             <Pagination></Pagination>
         </div>
@@ -28,9 +16,10 @@
 </template>
 <script>
 
-import ListCat from "../components/ListOfCat"
 import Pagination from "../components/Pagination"
 import FilterNav from "../components/FilterNav"
+import Category from "../components/Categories"
+
 
 export default {
     data(){
@@ -39,7 +28,7 @@ export default {
         }
     },
     components :{
-        ListCat,
+        Category,
         Pagination,
         FilterNav
     },
@@ -48,4 +37,11 @@ export default {
 
 <style scoped>
     
+  .leave-enter-active, .leave-leave-active {
+    transition: all .9s;
+  }
+  .leave-enter, .leave-leave-to {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
 </style>

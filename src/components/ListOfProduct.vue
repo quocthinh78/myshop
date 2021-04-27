@@ -1,48 +1,51 @@
 <template>
-    <div class="grid__column-2-4">
-        <!-- product item -->
-        <a class="home-poduct-item">
-            <img class="home-product-item__img" src="@/assets/img/sp1.jpeg">
-            <h4 class="home-product-item__name">Chân váy hoa nhí kèm hoa nhí kèm hoa nhí kèm hình thật bảng màu ở cuối</h4>
-            <div class="home-product-item__price">
-                <span class="home-product-item__price-old">1.000.000d</span>
-                <span class="home-product-item__price-current">1.200.000d</span>
-            </div>
-            <div class="home-product-item__action">
-                <span class="home-product-item__like home-product-item__like--liked">
-                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                    <i class="home-product-item__like-icon-fill far fa-heart"></i>
-                </span>
-                <div class="home-product-item__rating">
-                    <i class="home-product-item__start--gold fas fa-star"></i>
-                    <i class="home-product-item__start--gold fas fa-star"></i>
-                    <i class="home-product-item__start--gold fas fa-star"></i>
-                    <i class="home-product-item__start--gold fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+    <div class="grid__row">
+        <div v-for="(product, i ) in products" class="grid__column-2-4" :key="i">
+            <!-- product item -->
+            <a class="home-poduct-item">
+                <img class="home-product-item__img" :src="require('@/assets/img/'+ product.image)">
+                <!-- <div class="home-product-item__img" :style="`background-image : url(${require('@/assets/img/'+ product.image)})`"></div> -->
+                <h4 class="home-product-item__name">{{product.name}}</h4>
+                <div class="home-product-item__price">
+                    <span class="home-product-item__price-old">{{product.price}}đ</span>
+                    <span class="home-product-item__price-current">{{Math.round(product.price) * product.rate / 100}}đ</span>
                 </div>
-                <span class="home-product-item__sold">
-                    88 da ban
-                </span>
-            </div>
-            <div class="home-product-item__origin">
-                <span class="home-product-item__brand">Whoo</span>
-                <span class="home-product-item__origin-name">Nhật Bản</span>
+                <div class="home-product-item__action">
+                    <span class="home-product-item__like home-product-item__like--liked">
+                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                        <i class="home-product-item__like-icon-fill far fa-heart"></i>
+                    </span>
+                    <div class="home-product-item__rating">
+                        <i class="home-product-item__start--gold fas fa-star"></i>
+                        <i class="home-product-item__start--gold fas fa-star"></i>
+                        <i class="home-product-item__start--gold fas fa-star"></i>
+                        <i class="home-product-item__start--gold fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="home-product-item__sold">
+                        {{product.brand}} da ban
+                    </span>
+                </div>
+                <div class="home-product-item__origin">
+                    <span class="home-product-item__brand">Whoo</span>
+                    <span class="home-product-item__origin-name">Nhật Bản</span>
 
-            </div>
-            <div class="home-product-item__favourite">
-                <i class="fas fa-check"></i> <span>Yêu thích</span>
-            </div>
-            <div class="home-product-item__sale-off">
-                <span class="home-product-item__sale-off-percent">43%</span>
-                <span class="home-product-item__sale-off-label">GIẢM</span>
-            </div>
-        </a>
+                </div>
+                <div class="home-product-item__favourite">
+                    <i class="fas fa-check"></i> <span>Yêu thích</span>
+                </div>
+                <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">{{product.brand}}%</span>
+                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                </div>
+            </a>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    
+    props :["products"]
 }
 </script>
 
@@ -68,7 +71,7 @@ export default {
 .home-product-item__img {
     /* padding-top: 100%; */
     width: 100%;
-    /* background-image: url("../img/sp1.jpeg"); */
+    height: 266px;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 2px 2px 0 0;

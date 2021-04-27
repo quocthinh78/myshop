@@ -1,6 +1,21 @@
 const state = {
-    sachtieuthuyet: [{
+    "sachtieuthuyet": [{
+            "id": 1,
+            "rate": 20,
+            "name": "Con Chim Xanh Biếc Bay Về",
+            "brand": "23",
+            "image": "6.png",
+            "price": 180000,
+            "smallDes": "Văn chương dành cho tuổi mới lớn.",
+            "intro": "Với tác phẩm mới, Nguyễn Nhật Ánh tiếp tục chinh phục bạn đọc bằng câu chuyện cổ tích. Dù cổ điển hay hiện đại, tình yêu trong truyện của Nguyễn Nhật Ánh vẫn sẽ chiến thắng.",
+            "review": "Nấu một bữa ăn ngon cho gia đình là niềm hạnh phúc tuyệt vời của người mẹ, người vợ. Đôi khi, những món ăn chơi đơn giản sẽ là bí quyết tốt nhất giúp bạn có thể chuẩn bị mâm cơm đầy đù chất dinh dưỡng và ngon miệng mà không quá mất nhiều thời gian. Cuốn sách giới thiệu những món ăn thường gặp nhưng không phải ai cũng biết cách chế biến đúng cách: Bún mắm cá cơm, nộm mướp đắng, ngao xào lá quế, khoai môn cuộn tôm...\n            ,Đã từ lâu, Nguyễn Nhật Ánh xác lập cho mình một vị trí không thể thay thế ở dòng văn chương dành cho tuổi mới lớn.\n            Những cảm xúc trong trẻo, hồn hậu gắn liền những ký ức tuổi thơ ở một vùng quê nghèo miền Trung hay những cảm xúc mưa nắng thất thường của tuổi mới lớn đều được ông nắm bắt tâm lý tài tình và viết ra với một văn phong giản dị mà thấu hiểu.\n            ",
+            "status": 1,
+            "cat_id": 1,
+            "author_id": 1,
+            "created_at": null
+        }, {
             "id": 2,
+            "rate": 31,
             "name": "Nhà Giả Kim",
             "brand": "24",
             "image": "2.png",
@@ -15,6 +30,7 @@ const state = {
         },
         {
             "id": 3,
+            "rate": 33,
             "name": "Quân Khu Nam Đồng",
             "brand": "95",
             "image": "3.png",
@@ -29,6 +45,7 @@ const state = {
         },
         {
             "id": 4,
+            "rate": 36,
             "name": "Dấu Chân Trên Cát ",
             "brand": "12",
             "image": "4.png",
@@ -43,6 +60,7 @@ const state = {
         },
         {
             "id": 5,
+            "rate": 32,
             "name": "Những Giấc Mơ Ở Hiệu Sách Morisaki ",
             "brand": "14",
             "image": "5.png",
@@ -57,6 +75,7 @@ const state = {
         },
         {
             "id": 7,
+            "rate": 43,
             "name": "Chuộc Tội",
             "brand": "19",
             "image": "7.png",
@@ -71,6 +90,7 @@ const state = {
         },
         {
             "id": 8,
+            "rate": 32,
             "name": "Hãy Chăm Sóc Mẹ",
             "brand": "32",
             "image": "8.png",
@@ -85,6 +105,7 @@ const state = {
         },
         {
             "id": 9,
+            "rate": 33,
             "name": "Hiệu Sách Nhỏ Ở Paris",
             "brand": "12",
             "image": "9.png",
@@ -99,6 +120,7 @@ const state = {
         },
         {
             "id": 10,
+            "rate": 33,
             "name": "Hiệu Sách Nhỏ Ở Paris",
             "brand": "24",
             "image": "10.png",
@@ -112,8 +134,9 @@ const state = {
             "created_at": null
         },
     ],
-    sachkinhte: [{
+    "sachkinhte": [{
             "id": 11,
+            "rate": 21,
             "name": "Từ Tốt Đến Vĩ Đại",
             "brand": "45",
             "image": "11.png",
@@ -128,6 +151,7 @@ const state = {
         },
         {
             "id": 12,
+            "rate": 19,
             "name": "Kế Hoạch 12 Tháng Đến Với Tự Do Tài Chính",
             "brand": "54",
             "image": "12.png",
@@ -142,6 +166,7 @@ const state = {
         },
         {
             "id": 13,
+            "rate": 33,
             "name": "Tiếp Thị 4.0 ",
             "brand": "68",
             "image": "13.png",
@@ -156,6 +181,7 @@ const state = {
         },
         {
             "id": 14,
+            "rate": 12,
             "name": "Khởi Nghiệp Kinh Doanh ",
             "brand": "39",
             "image": "14.png",
@@ -170,6 +196,7 @@ const state = {
         },
         {
             "id": 15,
+            "rate": 45,
             "name": "Nghệ Thuật Làm Giàu Của Người Do Thái",
             "brand": "56",
             "image": "15.png",
@@ -184,6 +211,7 @@ const state = {
         },
         {
             "id": 16,
+            "rate": 23,
             "name": "Kinh Doanh Kiếm 1 Triệu USD Ở Việt Nam",
             "brand": "42",
             "image": "16.png",
@@ -198,6 +226,7 @@ const state = {
         },
         {
             "id": 17,
+            "rate": 12,
             "name": "Kiếm Tiền Thời Khủng Hoảng",
             "brand": "23",
             "image": "17.png",
@@ -212,6 +241,7 @@ const state = {
         },
         {
             "id": 18,
+            "rate": 23,
             "name": "21 Nguyên Tắc Tự Do Tài Chính",
             "brand": "56",
             "image": "18.png",
@@ -226,6 +256,7 @@ const state = {
         },
         {
             "id": 19,
+            "rate": 32,
             "name": "Nghĩ Giàu Làm Giàu 365 Ngày",
             "brand": "12",
             "image": "19.png",
@@ -240,6 +271,7 @@ const state = {
         },
         {
             "id": 20,
+            "rate": 30,
             "name": "Tuần Làm Việc 4 Giờ",
             "brand": "26",
             "image": "20.png",
@@ -253,8 +285,9 @@ const state = {
             "created_at": null
         },
     ],
-    sachnuoidaycon: [{
+    "sachnuoidaycon": [{
             "id": 21,
+            "rate": 42,
             "name": "Đắc Nhân Tâm",
             "brand": "45",
             "image": "21.png",
@@ -269,6 +302,7 @@ const state = {
         },
         {
             "id": 22,
+            "rate": 12,
             "name": "Tuổi Trẻ Đáng Giá Bao Nhiêu",
             "brand": "34",
             "image": "22.png",
@@ -283,6 +317,7 @@ const state = {
         },
         {
             "id": 23,
+            "rate": 26,
             "name": "Đọc Vị Bất Kỳ Ai",
             "brand": "36",
             "image": "23.png",
@@ -297,6 +332,7 @@ const state = {
         },
         {
             "id": 24,
+            "rate": 35,
             "name": "Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
             "brand": "25",
             "image": "24.png",
@@ -311,6 +347,7 @@ const state = {
         },
         {
             "id": 25,
+            "rate": 24,
             "name": "9 Nguyên Tắc Làm Một Người Chồng Tốt",
             "brand": "35",
             "image": "25.png",
@@ -325,6 +362,7 @@ const state = {
         },
         {
             "id": 26,
+            "rate": 44,
             "name": "Giá Trị Của Sự Tử Tế",
             "brand": "29",
             "image": "26.png",
@@ -339,6 +377,7 @@ const state = {
         },
         {
             "id": 27,
+            "rate": 12,
             "name": "Hạnh Phúc Do Bạn Lựa Chọn",
             "brand": "89",
             "image": "27.png",
@@ -353,6 +392,7 @@ const state = {
         },
         {
             "id": 28,
+            "rate": 24,
             "name": "Những Giá Trị Sống Cho Tuổi Trẻ",
             "brand": "23",
             "image": "28.png",
@@ -367,6 +407,7 @@ const state = {
         },
         {
             "id": 29,
+            "rate": 31,
             "name": "Yêu Mình Trước Đã, Yêu Đời Để Sau",
             "brand": "34",
             "image": "29.png",
@@ -381,6 +422,7 @@ const state = {
         },
         {
             "id": 30,
+            "rate": 34,
             "name": " Bạn Đã Sẵn Sàng Để Yêu",
             "brand": "90",
             "image": "30.png",
@@ -399,14 +441,22 @@ const getters = {
     getTieuThuyet: (state) => state.sachtieuthuyet,
     getKinhTe: state => state.sachkinhte,
     getSachNuoiDayCon: state => state.sachnuoidaycon,
-    getAllProduct: state => [...state.sachtieuthuyet, ...state.getSachNuoiDayCon, ...state.sachkinhte],
+    getAllProduct: state => [...state.sachtieuthuyet, ...state.sachnuoidaycon, ...state.sachkinhte],
 }
 const mutations = {
-
+    // SortSaleTop(state, payload) {
+    //     let cat = payload.split("-");
+    //     if (cat.join("") == "") {
+    //         console.log("a")
+    //     }
+    // }
 }
 
 const actions = {
-
+    saleTop(context, payload) {
+        console.log(payload)
+        context.commit("SortSaleTop", payload);
+    }
 }
 export default {
     state,
