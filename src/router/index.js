@@ -15,7 +15,7 @@ export default new Router({
             path: "",
             component: AllProducts
         }, {
-            path: "/loai-san-pham/:product",
+            path: "/loai-san-pham/:cat",
             component: CatProducts
         }]
     }, ],

@@ -39,7 +39,9 @@
                     <span class="home-product-item__sale-off-label">GIẢM</span>
                 </div>
             </a>
+           
         </div>
+         {{products}}
     </div>
 </template>
 

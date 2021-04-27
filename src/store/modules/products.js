@@ -1,5 +1,5 @@
 const state = {
-    "sachtieuthuyet": [{
+    sachtieuthuyet: [{
             "id": 1,
             "rate": 20,
             "name": "Con Chim Xanh Biếc Bay Về",
@@ -134,7 +134,7 @@ const state = {
             "created_at": null
         },
     ],
-    "sachkinhte": [{
+    sachkinhte: [{
             "id": 11,
             "rate": 21,
             "name": "Từ Tốt Đến Vĩ Đại",
@@ -285,7 +285,7 @@ const state = {
             "created_at": null
         },
     ],
-    "sachnuoidaycon": [{
+    sachnuoidaycon: [{
             "id": 21,
             "rate": 42,
             "name": "Đắc Nhân Tâm",

@@ -1,15 +1,15 @@
 <template>
 <transition name="leave">
-    <ListOfProduct :products="getCat()"></ListOfProduct>
+    <ListOfProducts :products="getCat()"></ListOfProducts>
 </transition>
 </template>
 
 <script>
 import {mapGetters} from "vuex";
-import ListOfProduct from "../components/ListOfProduct"
+import ListOfProducts from "../components/ListOfProduct"
 export default {
     components :{
-        ListOfProduct
+        ListOfProducts
     },
     computed :{
         ...mapGetters(["getTieuThuyet","getKinhTe","getSachNuoiDayCon"]),
