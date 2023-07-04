@@ -1,1 +1,1 @@
-const categories = [{ name: "thin", id: 1 }];
+const categories = [{ name: "thinh", id: 1 }];
