@@ -493,7 +493,7 @@ const state = {
       review:
         "Vậy tại sao con người ta cần phải biết cách thu phục ‘nhân tâm’? Và tại sao chúng ta lại phải mua một quyển sách khi không chắc chắn nó thật sự bổ ích? Đó là câu hỏi mà bất cứ một ai  trước khi sẵn sàng mua bất cứ một quyển sách nào đấy đều phải nghĩ và cân nhắc đến. Bởi chắc hẳn không một ai muốn lãng phí thời gian quý báu của mình để làm những điều không mang lại chút lợi ích nào, và câu trả lời là ở đây là? Có! Bởi nó thật sự đáng giá, và quả thật có vô vàng khán giả đã kiểm chứng rằng nó thật sự không làm lãng phí thời gian của bạn chút nào.",
       status: 1,
-      cat_id: 3,
+      cat_id: 3000,
       author_id: 7000,
       created_at: null,
     },
